@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index">
+  <meta property="author" name="author" content="Samo Drole">
+
+  <link rel="icon" href="images/favicon-32.png">
+
+  <meta property="og:site_name" content="Samo Drole">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Alcohol Consumption By Country">
+  <meta property="og:url" content="http://samodrole.com/dataviz/mm2019w26/">
+  <meta property="og:description" content="For MakoverMonday 2019w26 - One Chart at a Time by Samo Drole">
+  <meta property="og:image" content="http://samodrole.com/dataviz/mm2019w26/images/twitterCard.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@samodrole">
+  <meta name="twitter:creator" content="@samodrole">
+  <meta name="twitter:url" content="http://samodrole.com/dataviz/mm2019w26/">
+  <meta name="twitter:title" content="Alcohol Consumption By Country">
+  <meta name="twitter:description" content="For MakoverMonday 2019w26 - One Chart at a Time by Samo Drole">
+  <meta name="twitter:image" content="http://samodrole.com/dataviz/mm2019w26/images/twitterCard.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Alcohol Consumption By Country</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <section>
+      <div class="content">
+        <h1>Alcohol Consumption by Country</h1>
+        <p>The highest consumption rates of alcohol seem to be concentrated in Europe
+          and other places in the Northern Hemisphere of the globe. The highest rates can be seen in
+          countries like Belarus, Lithuania, the Czech Republic, Ireland, and France. Meanwhile, countries
+          in Asia,
+          Africa, and
+          the pacific have much lower rates of consumption.<br /><br />
+          <em>Average consumption of alcohol within a country <span>per capita consumption of pure alcohol in
+              liters</span> as a measurement to avoid
+            being
+            biased as much as possible.</em></p>
+      </div>
+      <div class="chart"></div>
+    </section>
+    <footer>
+      <p>For <a href="https://makeovermonday.co.uk/" target="_blank">MakoverMonday 2019w26</a> by <a
+          href="https://twitter.com/samodrole" target="_blank">Samo
+          Drole</a></p>
+      <p class="data">Data source: <a
+          href="https://www.worldatlas.com/articles/who-drinks-the-most-alcohol-consumption-by-country.html"
+          target="_blank">World Atlas</a></p>
+    </footer>
+  </div>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158666197-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-158666197-1');
+  </script>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>

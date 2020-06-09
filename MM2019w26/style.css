@@ -1,0 +1,92 @@
+:root {
+  --padding: 16px;
+  --margin: 16px;
+  --textColor: #2f1c09;
+  --colorBlack100: rgba(0, 0, 0, 1);
+  --colorWhite100: rgba(255, 255, 255, 1);
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  color: var(--textColor);
+  font-size: 10px;
+  font-family: 'Cabin', sans-serif;
+  background-color: #fff9f2;
+}
+
+.wrapper {
+  box-sizing: content-box;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: calc(var(--padding)*2);
+}
+
+section {
+  display: grid;
+  grid-template-columns: auto 420px;
+  border-top: 6px solid var(--textColor);
+}
+.content {
+  margin-right: calc(var(--margin)*4);
+}
+.content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.content p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.content p em {
+  opacity: .8;
+}
+
+.content p span {
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+  text-decoration: underline;
+  color: var(--textColor);
+}
+
+.chart {
+  min-height: 600px;
+}
+
+.tick line {
+  stroke: none;
+}
+
+.y-axis path {
+  stroke: #634322;
+  opacity: .3;
+}
+
+footer {
+  display: flex;
+  border-top: 2px solid var(--textColor);
+  padding-top: calc(var(--padding)/2);
+  margin-top: var(--margin);
+}
+
+footer p {
+  flex-grow: 1;
+  font-size: 1.1rem;
+}
+footer p a {
+  color: var(--textColor) ;
+}
+
+footer p.data {
+  text-align: right;
+}
+
+@media only screen and (max-width: 700px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+  .content {
+    margin-right: 0;
+  }
+}
