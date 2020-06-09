@@ -5,4 +5,4 @@
 
 ### Projects list
 
-- [Alcohol Consumption By Country](http://samodrole.com/dataviz/mm2019w26/)
+- [Alcohol Consumption By Country](http://samodrole.com/dataviz/mm2019w26/) | 2019w26
